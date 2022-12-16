@@ -1,0 +1,587 @@
+{
+	"info": {
+		"_postman_id": "25337359-36d0-4f87-80e2-3a9e4d2e9afb",
+		"name": "mandiri_healt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19395764"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/mandiri_inhealt/api/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "ade_rohmat",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Ade Rohmat Maulana",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Majalengka",
+							"type": "text"
+						},
+						{
+							"key": "bod",
+							"value": "1998-08-04",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "aderohmatmaulana77@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/mandiri_inhealt/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mandiri_inhealt",
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/mandiri_inhealt/api/auth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "ade_rohmat",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/mandiri_inhealt/api/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mandiri_inhealt",
+						"api",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/mandiri_inhealt/api/User_profile/GetUserProfileByUsername/ade_rohmat",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/mandiri_inhealt/api/User_profile/GetUserProfileByUsername/ade_rohmat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mandiri_inhealt",
+						"api",
+						"User_profile",
+						"GetUserProfileByUsername",
+						"ade_rohmat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/mandiri_inhealt/api/user_profile/update/ade_rohmat",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Ade",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Bantul",
+							"type": "text"
+						},
+						{
+							"key": "bod",
+							"value": "1999-09-01",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "aderohmatmaulana22@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/mandiri_inhealt/api/user_profile/update/ade_rohmat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mandiri_inhealt",
+						"api",
+						"user_profile",
+						"update",
+						"ade_rohmat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/mandiri_inhealt/api/skill/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "skill_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "skill_name",
+							"value": "python",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/mandiri_inhealt/api/skill/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mandiri_inhealt",
+						"api",
+						"skill",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/mandiri_inhealt/api/skill/GetSkills",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/mandiri_inhealt/api/skill/skill_by_id/1",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/mandiri_inhealt/api/skill/update/1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "skill_name",
+							"value": "PHP",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/mandiri_inhealt/api/skill/update/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mandiri_inhealt",
+						"api",
+						"skill",
+						"update",
+						"1"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/mandiri_inhealt/api/skill/delete/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/mandiri_inhealt/api/skill/delete/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mandiri_inhealt",
+						"api",
+						"skill",
+						"delete",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/mandiri_inhealt/api/skill_level/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "skill_level_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "skill_level_name",
+							"value": "beginer",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/mandiri_inhealt/api/skill_level/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mandiri_inhealt",
+						"api",
+						"skill_level",
+						"create"
+					],
+					"query": [
+						{
+							"key": "skill_level_id",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "skill_level_name",
+							"value": "beginer",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/mandiri_inhealt/api/skill_level/GetSkillsLevel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/mandiri_inhealt/api/skill_level/GetSkillsLevel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mandiri_inhealt",
+						"api",
+						"skill_level",
+						"GetSkillsLevel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/mandiri_inhealt/api/skill_level/skill_level_by_id/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/mandiri_inhealt/api/skill_level/skill_level_by_id/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mandiri_inhealt",
+						"api",
+						"skill_level",
+						"skill_level_by_id",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/mandiri_inhealt/api/skill_level/update/1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "skill_level_name",
+							"value": "intermediate",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/mandiri_inhealt/api/skill_level/update/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mandiri_inhealt",
+						"api",
+						"skill_level",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/mandiri_inhealt/api/skill_level/delete/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/mandiri_inhealt/api/skill_level/delete/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mandiri_inhealt",
+						"api",
+						"skill_level",
+						"delete",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/mandiri_inhealt/api/user_skill/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_skills_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "ade_rohmat",
+							"type": "text"
+						},
+						{
+							"key": "skill_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "skill_level_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/mandiri_inhealt/api/user_skill/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mandiri_inhealt",
+						"api",
+						"user_skill",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/mandiri_inhealt/api/user_skill/GetUserSkills",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/mandiri_inhealt/api/user_skill/GetUserSkills",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mandiri_inhealt",
+						"api",
+						"user_skill",
+						"GetUserSkills"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/mandiri_inhealt/api/user_skill/user_skill_by_id/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/mandiri_inhealt/api/user_skill/user_skill_by_id/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mandiri_inhealt",
+						"api",
+						"user_skill",
+						"user_skill_by_id",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/mandiri_inhealt/api/user_skill/update/1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_skills_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "ade_rohmat",
+							"type": "text"
+						},
+						{
+							"key": "skill_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "skill_level_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/mandiri_inhealt/api/user_skill/update/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mandiri_inhealt",
+						"api",
+						"user_skill",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/mandiri_inhealt/api/user_skill/delete/1",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
